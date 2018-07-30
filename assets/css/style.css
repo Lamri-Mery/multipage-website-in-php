@@ -1,0 +1,8 @@
+/* #7431f9+0 -> 99c4e5 > 75% */
+body{
+	background: #7431f9; /* Old browsers */
+	background: -moz-linear-gradient(left, #7431f9 0%, #99c4e5 75%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #7431f9 0%,#99c4e5 75%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #7431f9 0%,#99c4e5 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7431f9', endColorstr='#99c4e5',GradientType=1 ); /* IE6-9 */
+}
