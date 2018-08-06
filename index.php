@@ -36,10 +36,10 @@
 					<div class="collapse navbar-collapse navbar-ex1-collapse">
 						<ul class="nav navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link" href="#">Home</a>
+								<a class="nav-link" href="index.php">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Link</a>
+								<a class="nav-link" href="contact.php">Contact</a>
 							</li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
@@ -51,7 +51,9 @@
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 						<div class="mypost">
-							<p>ATTENTION, notre refuge sera fermé exceptionnellement aux visiteurs ce samedi 21 juillet !</p>
+							<div class="mytext">
+								<p>ATTENTION, notre refuge sera fermé exceptionnellement aux visiteurs ce samedi 21 juillet !</p>
+							</div>
 						</div>
 					</div>
 			</div>
