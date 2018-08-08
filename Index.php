@@ -320,29 +320,29 @@
                               <div class="row">
                                   <div class="col-md-12">
                                       <div class="form-group">
-                                          <label for="form_lastname">Subject *</label>
-                                          <input id="form_subject" type="subject" name="subject" class="form-control" placeholder="Please write your subject *" required="required" data-error="Fill in the box.">
+                                          <label for="subect">Subject *</label>
+                                          <input id="subject" type="subject" name="subject" class="form-control" placeholder="Please write your subject *" required="required" data-error="Fill in the box.">
                                           <div class="help-block with-errors"></div>
                                       </div>
                                   </div>
                                   <div class="col-md-12">
                                       <div class="form-group">
-                                          <label for="form_message">Message *</label>
-                                          <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                          <label for="message">Message *</label>
+                                          <textarea id="message" name="message" class="form-control" placeholder="Write your message here *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
                                           <div class="help-block with-errors"></div>
                                       </div>
                                   </div>
                                   <div class="col-md-12">
                                     <div class="form-group">
                                         <p>Pictures</p>
-                                        <input type="file" id="form_image" name="avatar" accept="image/png, image/jpeg" />
+                                        <input type="file" id="image" name="image" accept="image/png, image/jpeg" />
                                         <div class="help-block with-errors"></div>
                                     </div>
                                   </div>
                                   <div class="col-md-12">
                                       <p>Desired response format *</p>
-                                      <input id="format" type="radio" name="format" value="HTML">HTML
-                                      <input type="radio" name="format" value="Texte">Texte
+                                      <input id="format1" type="radio" name="format" value="HTML">HTML
+                                      <input id="format2" type="radio" name="format" value="Texte">Texte
                                       <div class="help-block with-errors"></div>
                                   </div>
                                   <div class="col-md-12" style="padding-top: 10px">
