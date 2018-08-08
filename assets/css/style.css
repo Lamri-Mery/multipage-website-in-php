@@ -5,6 +5,9 @@ nav.navbar.navbar-fixed-top.navbar-default{
 	background: linear-gradient(to right, #99c4e5 0%,#7431f9 200%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99c4e5', endColorstr='#7431f9',GradientType=1 ); /* IE6-9 */
 }
+.collapse.navbar-collapse.navbar-ex1-collapse {
+    box-shadow: 0px 6px 17px;
+}
 
 body{
 	background: #7431f9; /* Old browsers */
@@ -33,3 +36,7 @@ body {
 .mytext > p {
 
 }
+.vcenter {
+    margin: auto;
+}
+.

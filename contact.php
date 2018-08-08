@@ -280,7 +280,6 @@
 	// $mylastname = $_POST['mylastname'];
 	// 	$myfirstname = $_POST['myfirstname'];
 	// 	$myemail = $_POST['myemail'];
-	// 	$emailclean = filter_var($myemail, FILTER_VALIDATE_EMAIL);
 	// 	$myphone = $_POST['myphone'];
 	// 	$mysubject = $_POST['mysubject'];
 	// 	$myimage = $_POST['myimage'];

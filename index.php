@@ -29,7 +29,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<!-- <a class="navbar-brand" href="#"><img src=""></a> -->
+						
 					</div>
 			
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,16 +46,78 @@
 				</div>
 			</nav>
 			<div class="container-fluid">
+				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
 						<img src="assets/img/cat_dog.jpg">
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+								<p class=" vcenter">ATTENTION, notre refuge sera fermé exceptionnellement aux visiteurs ce samedi 21 juillet !</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 						<div class="mypost">
 							<div class="mytext">
-								<p>ATTENTION, notre refuge sera fermé exceptionnellement aux visiteurs ce samedi 21 juillet !</p>
+								<form>
+								<input id="mysearch2" type="search" placeholder="search">
+								<button>Search</button>
+								</form>
 							</div>
 						</div>
 					</div>
+					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+						<img src="assets/img/friends_animals.jpg">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+						<iframe src="https://www.youtube.com/embed/8gBz7rZYlW8?rel=0" width="100%" height="250px" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+						<p> "Les Petits Vieux " est une ASBL qui a pour but d'accueillir des vieux chiens et chats qui n'auraientaucune chance d'être adoptés dans un refuge.</p>
+						<p>Notre home tente de redonner à ces laissés-pour-compte, le confort, les soins et l’affection qui leur sont dus.</p>
+						<p>Agréé comme refuge pour animaux sous le numéro HK30502406</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+						<div id="carousel-id" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-id" data-slide-to="0" class=""></li>
+								<li data-target="#carousel-id" data-slide-to="1" class=""></li>
+								<li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="assets/img/dog1.jpeg">
+								</div>
+								<div class="item">
+									<img src="assets/img/cats.jpeg">
+								</div>
+								<div class="item">
+									<img src="assets/img/womanandcat.jpeg">
+								</div>
+								<div class="item">
+									<img src="assets/img/cat1.jpeg">
+								</div>
+								<div class="item">
+									<img src="assets/img/mananddogs.jpeg">
+								</div>
+								<div class="item">
+									<img src="assets/img/dogs.jpeg">
+								</div>
+								<div class="item">
+									<img src="assets/img/cat.jpeg">
+								</div>
+								<div class="item">
+									<img src="assets/img/dog.jpeg">
+								</div>
+							</div>
+							<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+							<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+						</div>
+					</div>
+				</div>
 			</div>
 
 
