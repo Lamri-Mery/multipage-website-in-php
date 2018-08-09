@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="libraries/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -56,13 +57,11 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-						<div class="mypost">
-							<div class="mytext">
-								<form>
+						<div>
+							<form>
 								<input id="mysearch2" type="search" placeholder="search">
 								<button>Search</button>
-								</form>
-							</div>
+							</form>
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
@@ -80,12 +79,24 @@
 					</div>
 				</div>
 				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+						<p>Il n'est plus possible de faire des paiements en ligne via notre site. En effet, nous nous rendons compte, à l'usage, que cela revient assez cher et, par souci d'économie, nous arrêtons donc ce moyen de paiement. Vous pouvez continuer à faire vos paiements à partir de votre ordinateur sur le compte de l'asbl indiqué ci-dessous.</p>
+
+						<p>Les dons financiers se font sur le compte : BE58 3600 0347 9979 avec l'indication « don » en communication.</p>
+						
+						<p>Merci pour votre compréhension.</p>
+					</div>
 					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
 						<div id="carousel-id" class="carousel slide" data-ride="carousel">
 							<ol class="carousel-indicators">
 								<li data-target="#carousel-id" data-slide-to="0" class=""></li>
 								<li data-target="#carousel-id" data-slide-to="1" class=""></li>
-								<li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+								<li data-target="#carousel-id" data-slide-to="2" class=""></li>
+								<li data-target="#carousel-id" data-slide-to="3" class=""></li>
+								<li data-target="#carousel-id" data-slide-to="4" class=""></li>
+								<li data-target="#carousel-id" data-slide-to="5" class=""></li>
+								<li data-target="#carousel-id" data-slide-to="6" class=""></li>
+								<li data-target="#carousel-id" data-slide-to="7" class="active"></li>
 							</ol>
 							<div class="carousel-inner">
 								<div class="item active">
@@ -118,17 +129,88 @@
 						</div>
 					</div>
 				</div>
+
+				<div id="loop" class="row">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 goldbook">
+						<p class="goldright">26/05/2016, 18:28</p>
+						<p>"Un tout grand merci pour la magnifique photo de June reçue ce matin. A très bientôt j'espère.
+						Michèle"</p>
+						<p class="goldright">– Michèle Salez</p>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 goldbook">
+						<p class="goldright">26/05/2016, 18:28</p>
+						<p>"test"</p>
+						<p class="goldright">– Michèle Salez</p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 goldbook">
+						<p class="goldright">26/05/2016, 18:28</p>
+						<p>"test test"</p>
+						<p class="goldright">– Michèle Salez</p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 goldbook">
+						<p class="goldright">26/05/2016, 18:28</p>
+						<p>"mon test"</p>
+						<p class="goldright">– Michèle Salez</p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 goldbook">
+						<p class="goldright">26/05/2016, 18:28</p>
+						<p>"Un tout grand merci pour la magnifique photo de June reçue ce matin. A très bientôt j'espère.
+						Michèle"</p>
+						<p class="goldright">– Michèle Salez</p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-sm-4 col-md-4 col-lg-4 goldbook">
+						<p class="goldright">26/05/2016, 18:28</p>
+						<p>"Un tout grand merci pour la magnifique photo de June reçue ce matin. A très bientôt j'espère.
+						Michèle"</p>
+						<p class="goldright">– Michèle Salez</p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 goldbook">
+						<p class="goldright">26/05/2016, 18:28</p>
+						<p>"Un tout grand merci pour la magnifique photo de June reçue ce matin. A très bientôt j'espère.
+						Michèle"</p>
+						<p class="goldright">– Michèle Salez</p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 goldbook">
+						<p class="goldright">26/05/2016, 18:28</p>
+						<p>"Un tout grand merci pour la magnifique photo de June reçue ce matin. A très bientôt j'espère.
+						Michèle"</p>
+						<p class="goldright">– Michèle Salez</p>
+					</div>
+				</div>
+				<nav aria-label="myNavigation">
+					<ul class="pagination">
+						<li id="previous-page">
+							<a class="page-link" href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+								<span class="sr-only">Previous</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<form action="#" method="POST" role="form">
+					<legend>Livre d'or</legend>
+				
+					<div class="form-group">
+						<label for="">lastName</label>
+						<input type="text" class="form-control" id="" placeholder="Input field">
+					</div>
+					<div class="form-group">
+						<label for="">FirstName</label>
+						<input type="text" class="form-control" id="" placeholder="Input field">
+					</div>
+					<textarea class="form-control" rows="6" id="comment" placeholder="Please write your subject *"></textarea>
+				
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
 			</div>
 
-
-			<!-- <form class="" role="search">
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Search">
-				</div>
-				<button type="submit" class="btn btn-default">Submit</button>
-			</form> -->
+			
 		<!-- jQuery & JavaScript -->
 		<script src="libraries/jquery.min.js"></script>
 		<script src="libraries/bootstrap.min.js"></script>
+		<script src="libraries/popper.min.js"></script>
+		<script src="assets/js/pagination.js"></script>
 	</body>
 </html
