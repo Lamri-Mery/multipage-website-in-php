@@ -1,3 +1,31 @@
+<?php 
+	$jsonsubmit = isset($_POST['jsubmit']);
+	if ($jsonsubmit == true) {
+		// récupérer toute les données de mon formulaire et le mettre dans un tableau nommé mygoldbook
+		$mygoldbook = array();
+		
+		$mygoldbook['lastname'] = $_POST['jlastname'];
+		$mygoldbook['firstname'] = $_POST['jfirstname'];
+		$mygoldbook['message'] = $_POST['jmessage'];
+		$mygoldbook['date'] = date('d/m/Y à H:i');
+
+		//*Ouvrir le fichier json*/
+		$myjs = file_get_contents('goldbook.json');
+
+		/*Converir le fichier json en tableau php*/
+		$myjs = json_decode($myjs, true); //true convertit en tableau, sans cela les éléments selectionnés seraient convertit en objet
+		/*Ajouter des éléments dans le tableau qui a été créé*/
+		$myjs[] = $mygoldbook;
+		/*Convertir les éléments obtenu dans le tableau en json pour le remettre dans le fichier*/
+		$myjs = json_encode($myjs);
+		/*Remettre dans le fichier json*/
+		file_put_contents('goldbook.json', $myjs);
+		/*Ajouter une direction après l'envois du formulaire*/
+		header('location: ./');
+
+	}
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -8,6 +36,7 @@
 
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="libraries/bootstrap.css">
+		<link rel="stylesheet" href="libraries/fontawesome/css/all.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		
@@ -129,15 +158,22 @@
 						</div>
 					</div>
 				</div>
-
+				
 				<div id="loop" class="row">
+					<?php 
+						$mygoldbook = file_get_contents('goldbook.json');
+						$mygoldbook = json_decode($mygoldbook, true);
+
+						foreach ($mygoldbook as $key => $value) :
+							//print_r($value['lastname']);
+					?>
 					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 goldbook">
-						<p class="goldright">26/05/2016, 18:28</p>
-						<p>"Un tout grand merci pour la magnifique photo de June reçue ce matin. A très bientôt j'espère.
-						Michèle"</p>
-						<p class="goldright">– Michèle Salez</p>
+						<p class="goldright"><?php echo $mygoldbook[$key]['date']; ?></p>
+						<p>"<?php echo $mygoldbook[$key]['message']; ?>"</p>
+						<p class="goldright">– <?php echo $mygoldbook[$key]['lastname']; echo " "; echo $mygoldbook[$key]['firstname'];?></p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 goldbook">
+					<?php endforeach ?>
+					<!-- <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 goldbook">
 						<p class="goldright">26/05/2016, 18:28</p>
 						<p>"test"</p>
 						<p class="goldright">– Michèle Salez</p>
@@ -175,7 +211,7 @@
 						<p>"Un tout grand merci pour la magnifique photo de June reçue ce matin. A très bientôt j'espère.
 						Michèle"</p>
 						<p class="goldright">– Michèle Salez</p>
-					</div>
+					</div> -->
 				</div>
 				<nav aria-label="myNavigation">
 					<ul class="pagination">
@@ -193,16 +229,16 @@
 					<legend>Livre d'or</legend>
 				
 					<div class="form-group">
-						<label for="">lastName</label>
-						<input type="text" class="form-control" id="" placeholder="Input field">
+						<label for="">LastName</label>
+						<input type="text" name="jlastname" class="form-control" id="" placeholder="Input field">
 					</div>
 					<div class="form-group">
 						<label for="">FirstName</label>
-						<input type="text" class="form-control" id="" placeholder="Input field">
+						<input type="text" name="jfirstname" class="form-control" id="" placeholder="Input field">
 					</div>
-					<textarea class="form-control" rows="6" id="comment" placeholder="Please write your subject *"></textarea>
+					<textarea class="form-control" name="jmessage" rows="6" id="comment" placeholder="Please write your subject *"></textarea>
 				
-					<button type="submit" class="btn btn-primary">Submit</button>
+					<button type="submit" name="jsubmit" class="btn btn-primary">Submit</button>
 				</form>
 			</div>
 
