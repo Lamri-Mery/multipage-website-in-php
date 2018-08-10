@@ -27,16 +27,20 @@
 
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="One site in php created for a 2week project at Becode">
+		<meta name="author" content="AnthonySel & Lamri-Mery">
+		<meta name="viewport" content="width=device-width">
+		<meta name="theme-color" content="#FFFFFF">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Les petits vieux</title>
 
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="libraries/bootstrap.css">
-		<link rel="stylesheet" href="libraries/fontawesome/css/all.css">
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		
@@ -78,7 +82,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
-						<img src="assets/img/cat_dog.jpg">
+						<img alt='chien et chat' src="assets/img/cat_dog.jpg">
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 								<p class=" vcenter">ATTENTION, notre refuge sera fermé exceptionnellement aux visiteurs ce samedi 21 juillet !</p>
@@ -94,12 +98,12 @@
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
-						<img src="assets/img/friends_animals.jpg">
+						<img alt='amis des animaux' src="assets/img/friends_animals.jpg">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
-						<iframe src="https://www.youtube.com/embed/8gBz7rZYlW8?rel=0" width="100%" height="250px" frameborder="0" allowfullscreen></iframe>
+						<iframe title='Présentation' src="https://www.youtube.com/embed/8gBz7rZYlW8?rel=0" width="100%" height="250px" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 						<p> "Les Petits Vieux " est une ASBL qui a pour but d'accueillir des vieux chiens et chats qui n'auraientaucune chance d'être adoptés dans un refuge.</p>
@@ -129,28 +133,28 @@
 							</ol>
 							<div class="carousel-inner">
 								<div class="item active">
-									<img src="assets/img/dog1.jpeg">
+									<img alt='plusieurs chiens' src="assets/img/dog1.jpeg">
 								</div>
 								<div class="item">
-									<img src="assets/img/cats.jpeg">
+									<img alt='plusieurs chats' src="assets/img/cats.jpeg">
 								</div>
 								<div class="item">
-									<img src="assets/img/womanandcat.jpeg">
+									<img alt='un femme et un chien' src="assets/img/womanandcat.jpeg">
 								</div>
 								<div class="item">
-									<img src="assets/img/cat1.jpeg">
+									<img alt='un chat' src="assets/img/cat1.jpeg">
 								</div>
 								<div class="item">
-									<img src="assets/img/mananddogs.jpeg">
+									<img alt='un homme et plusieurs chiens' src="assets/img/mananddogs.jpeg">
 								</div>
 								<div class="item">
-									<img src="assets/img/dogs.jpeg">
+									<img alt='plusieurs chiens' src="assets/img/dogs.jpeg">
 								</div>
 								<div class="item">
-									<img src="assets/img/cat.jpeg">
+									<img alt='un chat' src="assets/img/cat.jpeg">
 								</div>
 								<div class="item">
-									<img src="assets/img/dog.jpeg">
+									<img alt='un chien' src="assets/img/dog.jpeg">
 								</div>
 							</div>
 							<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
@@ -173,45 +177,6 @@
 						<p class="goldright">– <?php echo $mygoldbook[$key]['lastname']; echo " "; echo $mygoldbook[$key]['firstname'];?></p>
 					</div>
 					<?php endforeach ?>
-					<!-- <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 goldbook">
-						<p class="goldright">26/05/2016, 18:28</p>
-						<p>"test"</p>
-						<p class="goldright">– Michèle Salez</p>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 goldbook">
-						<p class="goldright">26/05/2016, 18:28</p>
-						<p>"test test"</p>
-						<p class="goldright">– Michèle Salez</p>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 goldbook">
-						<p class="goldright">26/05/2016, 18:28</p>
-						<p>"mon test"</p>
-						<p class="goldright">– Michèle Salez</p>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 goldbook">
-						<p class="goldright">26/05/2016, 18:28</p>
-						<p>"Un tout grand merci pour la magnifique photo de June reçue ce matin. A très bientôt j'espère.
-						Michèle"</p>
-						<p class="goldright">– Michèle Salez</p>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-sm-4 col-md-4 col-lg-4 goldbook">
-						<p class="goldright">26/05/2016, 18:28</p>
-						<p>"Un tout grand merci pour la magnifique photo de June reçue ce matin. A très bientôt j'espère.
-						Michèle"</p>
-						<p class="goldright">– Michèle Salez</p>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 goldbook">
-						<p class="goldright">26/05/2016, 18:28</p>
-						<p>"Un tout grand merci pour la magnifique photo de June reçue ce matin. A très bientôt j'espère.
-						Michèle"</p>
-						<p class="goldright">– Michèle Salez</p>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 goldbook">
-						<p class="goldright">26/05/2016, 18:28</p>
-						<p>"Un tout grand merci pour la magnifique photo de June reçue ce matin. A très bientôt j'espère.
-						Michèle"</p>
-						<p class="goldright">– Michèle Salez</p>
-					</div> -->
 				</div>
 				<nav aria-label="myNavigation">
 					<ul class="pagination">
