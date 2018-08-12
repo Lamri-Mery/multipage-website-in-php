@@ -1,0 +1,45 @@
+/*Background Color*/
+nav.navbar.navbar-fixed-top.navbar-default{
+	background: #99c4e5; /* Old browsers */
+	background: -moz-linear-gradient(left, #99c4e5 0%, #7431f9 200%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #99c4e5 0%,#7431f9 200%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #99c4e5 0%,#7431f9 200%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99c4e5', endColorstr='#7431f9',GradientType=1 ); /* IE6-9 */
+}
+.collapse.navbar-collapse.navbar-ex1-collapse {
+    box-shadow: 0px 6px 17px;
+}
+body{
+	background: #7431f9; /* Old browsers */
+	background: -moz-linear-gradient(left, #7431f9 0%, #99c4e5 75%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #7431f9 0%,#99c4e5 75%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #7431f9 0%,#99c4e5 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7431f9', endColorstr='#99c4e5',GradientType=1 ); /* IE6-9 */
+}
+@font-face {
+font-family: 'Glyphicons Halflings';
+src: url('librairies/fonts/glyphicons-halflings-regular.eot');
+src: url('librairies/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+     url('librairies/fonts/glyphicons-halflings-regular.woff') format('woff'),
+     url('librairies/fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+     url('librairies/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+     url('librairies/fonts/glyphicons-halflings-regular.svg#QuadrantaBold') format('svg');
+}
+
+body {
+    margin-top: 4%;
+    display: block;
+}
+iframe {
+    margin-bottom: -5px;
+}
+.container-fluid, .container-fluid > *{
+	padding:0;
+}
+.container-fluid img{
+	width: 100%;
+}
+
+p{
+	
+}
