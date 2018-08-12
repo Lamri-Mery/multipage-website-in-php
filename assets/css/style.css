@@ -1,13 +1,10 @@
 /*Background Color*/
-nav.navbar.navbar-fixed-top.navbar-default{
+nav.navbar.navbar-fixed-top.navbar-default, footer {
 	background: #99c4e5; /* Old browsers */
 	background: -moz-linear-gradient(left, #99c4e5 0%, #7431f9 200%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(left, #99c4e5 0%,#7431f9 200%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right, #99c4e5 0%,#7431f9 200%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99c4e5', endColorstr='#7431f9',GradientType=1 ); /* IE6-9 */
-}
-.collapse.navbar-collapse.navbar-ex1-collapse {
-    box-shadow: 0px 6px 17px;
 }
 body{
 	background: #7431f9; /* Old browsers */
@@ -16,22 +13,16 @@ body{
 	background: linear-gradient(to right, #7431f9 0%,#99c4e5 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7431f9', endColorstr='#99c4e5',GradientType=1 ); /* IE6-9 */
 }
-@font-face {
-font-family: 'Glyphicons Halflings';
-src: url('librairies/fonts/glyphicons-halflings-regular.eot');
-src: url('librairies/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
-     url('librairies/fonts/glyphicons-halflings-regular.woff') format('woff'),
-     url('librairies/fonts/glyphicons-halflings-regular.woff2') format('woff2'),
-     url('librairies/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-     url('librairies/fonts/glyphicons-halflings-regular.svg#QuadrantaBold') format('svg');
+/*Ombre NavBar*/
+.collapse.navbar-collapse.navbar-ex1-collapse {
+    box-shadow: 0px 6px 17px;
 }
+/*Body*/
 
 body {
+	overflow-x: hidden;
     margin-top: 4%;
     display: block;
-}
-iframe {
-    margin-bottom: -5px;
 }
 .container-fluid, .container-fluid > *{
 	padding:0;
@@ -39,7 +30,59 @@ iframe {
 .container-fluid img{
 	width: 100%;
 }
+ /*Video*/
+iframe {
+    margin-bottom: -5px;
+}
+/*Modal*/
+div#myModal {
+    overflow: hidden;
+}
+.modal-vertical-centered {
+	margin: auto -25%;
+	overflow: hidden;
+	transform: translate(0, 0) !important;
+	-ms-transform: translate(0, 0) !important; /* IE 9 */
+	-webkit-transform: translate(0, 0) !important; /* Safari and Chrome */
+}
 
-p{
-	
+
+/*Color Button*/
+button, .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #337ab7;
+}
+
+/*footer*/
+footer {
+	height: 100px;
+	box-shadow: 0px -6px 17px;
+}
+/**/
+.val{
+	margin: 10% 0%;
+}
+/*label-recherche*/
+.invisible{
+	direction: none;
+}
+/*logo*/
+@media only screen and (max-width: 768px) {
+	#menulogo{
+		width: 8%;
+		margin-left: 10%;
+	}
+} 
+@media only screen and (min-width: 768px) {
+	#menulogo{
+		width: 21%;
+		margin-left: 40%;
+	}
 }
