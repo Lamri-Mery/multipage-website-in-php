@@ -23,5 +23,5 @@
 		$mygoldbook['firstname'] = $_POST['jfirstname'];
 		$mygoldbook['message'] = $_POST['jmessage'];
 		$mygoldbook['date'] = date('d/m/Y à H:i');
+	}
 ?>
-
