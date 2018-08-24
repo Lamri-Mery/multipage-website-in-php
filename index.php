@@ -1,4 +1,7 @@
 <?php 
+	ini_set('display_errors', 1);
+	ini_set('display_startup_errors', 1);
+	error_reporting(E_ALL);
 	$jsonsubmit = isset($_POST['jsubmit']);
 	if ($jsonsubmit == true) {
 		// récupérer toute les données de mon formulaire et le mettre dans un tableau nommé mygoldbook
